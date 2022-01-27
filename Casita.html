@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MiCasita, SuCasita</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/images/casita.svg">
+    <link rel="stylesheet" type="text/css" href="assets/css/remove_padroes.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/casita.css">
+
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
+    <script rel="javascript" src="assets/js/casita.js"></script>
+</head>
+
+    <body onload="carrossel(), imagenzinhas()">
+        
+        <header>
+            <img src="assets/images/casita.svg">
+            <h2>MiCasita, <span>SuCasita</span></h2>
+        </header>
+        <main>
+            <div>
+                <div>
+                    <button onclick="regressar()" id="anterior"> < </button>
+                    <div id="container_imagem">
+                        <img id="imagem_corrente" onclick="avancar()" src="">
+                    </div>
+                    <button onclick="avancar()" id="proximo"> > </button>
+                </div>
+                <div class="mini__image__pai">
+                    <div><img class="mini__image" onmouseover="hoover1()" src=""></div>
+                    <div><img class="mini__image" onmouseover="hoover2()" src=""></div>
+                    <div><img class="mini__image" onmouseover="hoover3()" src=""></div>
+                    <div><img class="mini__image" onmouseover="hoover4()" src=""></div>
+                </div>
+            </div>
+        </main>
+    </body>
+    
+
+</html>
